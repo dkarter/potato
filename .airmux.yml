@@ -1,0 +1,18 @@
+# Name of the session
+name: frontend
+
+# Root directory of the session
+root: ~/dev/learn/k8s/frontend
+# Commands to execute when creating the session
+on_create:
+# Commands to execute when closing the session
+on_stop:
+# List of windows of session
+windows:
+  - ~:
+      # Any valid tmux layout is accepted
+      layout: main-vertical
+      # Short form for panes, with a single command each:
+      panes:
+        - vim
+        - clear
